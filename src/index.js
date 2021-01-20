@@ -8,8 +8,7 @@ new Vue({
 
 	data: {
 		name: "",
-		hash: "",
-		someVal: ""
+		hash: ""
 	},
 
 });
