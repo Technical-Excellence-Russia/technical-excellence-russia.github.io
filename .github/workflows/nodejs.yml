@@ -29,7 +29,7 @@ jobs:
         run: |
           git config --local user.email "webpack[bot]@users.noreply.github.com"
           git config --local user.name "webpack[bot]"
-          git commit -am "Compile App"
+          git commit -am "Compile App" > /dev/null
 
       - name: Push changes
         uses: ad-m/github-push-action@master
