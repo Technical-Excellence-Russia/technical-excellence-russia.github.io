@@ -1,5 +1,5 @@
 {
-  "name": "teru",
+  "name": "technical-excellence-russia",
   "version": "1.0.0",
   "description": "Source for https://technical-excellence.ru",
   "private": true,
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:timmson/teru.git"
+    "url": "git@github.com:technical-excellence-russia/technical-excellence-russia.github.io.git"
   },
   "author": "timmnson",
   "license": "MIT",
   "bugs": {
-    "url": "https://git@github.com:timmson/teru/issues"
+    "url": "https://git@github.com:technical-excellence-russia/technical-excellence-russia.github.io/issues"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
