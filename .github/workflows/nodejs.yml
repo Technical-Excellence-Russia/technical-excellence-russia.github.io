@@ -29,7 +29,8 @@ jobs:
         run: |
           git config --local user.email "webpack[bot]@users.noreply.github.com"
           git config --local user.name "webpack[bot]"
-          git commit -am "Compile App"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Compile App"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
