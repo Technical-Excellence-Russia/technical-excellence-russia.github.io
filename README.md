@@ -9,7 +9,7 @@
 ### Clone
 ```sh
 git clone https://github.com/Technical-Excellence-Russia/technical-excellence-russia.github.io.git
-cd teru
+cd technical-excellence-russia.github.io
 ```
 
 ### Install dependencies
