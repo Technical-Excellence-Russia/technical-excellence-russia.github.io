@@ -5,11 +5,11 @@ html, body {
   min-height: 700px;
 
   @media (min-width: 240px) {
-    font-size: 10px;
+    font-size: 11pt;
   }
 
   @media (min-width: 400px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   @media (min-width: 768px) {
@@ -36,7 +36,7 @@ h1 {
 }
 
 a {
-  color: #aaa;
+  color: #333399;
 }
 
 .bg {
