@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-html, body {
+html,
+body {
   height: 100%;
   min-height: 700px;
 
@@ -23,7 +24,6 @@ html, body {
   @media (min-width: 1200px) {
     font-size: 22px;
   }
-
 }
 
 h1 {
@@ -40,10 +40,22 @@ a {
 }
 
 .bg {
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
+}
 
+.panel {
+  padding: 1em;
+  background-color: rgba(245, 245, 245, 0.5);
+  max-width: 800px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.5);
+}
+
+.panel p:last-child {
+  margin-bottom: 0;
 }
