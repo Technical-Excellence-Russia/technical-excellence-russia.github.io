@@ -3,7 +3,7 @@
 html,
 body {
   height: 100%;
-  min-height: 700px;
+  min-height: 650px;
 
   @media (min-width: 240px) {
     font-size: 11px;
@@ -23,6 +23,10 @@ body {
 
   @media (min-width: 1200px) {
     font-size: 20px;
+
+    @media (min-height: 600px) {
+      font-size: 16px;
+    }
   }
 
   @media (min-width: 1400px) {
