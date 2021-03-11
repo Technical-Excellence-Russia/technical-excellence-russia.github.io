@@ -1,0 +1,4 @@
+User agent: *
+Disallow: /src/
+
+Sitemap: http://technical-excellence.ru/sitemap.xml
