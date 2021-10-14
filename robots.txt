@@ -1,4 +1,4 @@
-User agent: *
+User-agent: *
 Disallow: /src/
 
-Sitemap: http://technical-excellence.ru/sitemap.xml
+Sitemap: https://technical-excellence.ru/sitemap.xml
