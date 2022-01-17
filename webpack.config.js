@@ -1,7 +1,5 @@
 const path = require("path");
 require("babel-polyfill");
-
-// or  "style-loader"
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -41,5 +39,12 @@ module.exports = {
 		alias: {
 			"vue$": "vue/dist/vue.esm.js"
 		}
+	},
+	devServer: {
+		static: {
+			directory: path.join(__dirname, "."),
+		},
+		compress: true,
+		port: 3000,
 	}
 };
