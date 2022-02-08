@@ -1,8 +1,9 @@
 # Source for https://technical-excellence.ru
 
- - Vue.js 2
- - Bootstrap 4
- - ESLint, Mocha, Chai & NYC
+ - React 17
+ - Bootstrap 5
+ - Jest
+ - ESLint
  - Webpack
  - SASS/SCSS support
 
