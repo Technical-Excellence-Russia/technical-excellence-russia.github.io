@@ -1,10 +1,9 @@
 module.exports = {
 	"env": {
 		"browser": true,
-		"node": true,
 		"commonjs": true,
 		"es6": true,
-		"mocha": true
+		"jest": true
 	},
 	"extends": [
 		"eslint:recommended"
@@ -31,8 +30,8 @@ module.exports = {
 			"double"
 		],
 		"semi": [
-			"error",
-			"always"
+			"warn",
+			"never"
 		]
 	}
-};
+}

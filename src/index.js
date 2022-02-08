@@ -1,14 +1,15 @@
-import "bootstrap";
-import "./index.scss";
+import "bootstrap"
+import "./index.scss"
+/*
+import React from "react"
+import ReactDOM from "react-dom"
 
-import Vue from "vue";
 
-new Vue({
-	el: "#app",
+function App() {
+	return (
+		<div>
+		</div>
+	)
+}
 
-	data: {
-		name: "",
-		hash: ""
-	},
-
-});
+ReactDOM.render(<App/>, document.getElementById("app"))*/

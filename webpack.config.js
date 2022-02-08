@@ -6,11 +6,18 @@ module.exports = {
 	entry: "./src/index.js",
 	output: {
 		path: path.resolve(__dirname, "./"),
-		filename: "index.js",
-		chunkFilename: "[id].js"
+		filename: "index.js"
 	},
 	module: {
 		rules: [
+			{
+				test: /\.jsx?$/,
+				exclude: /(node_modules)/,
+				loader: "babel-loader",
+				options:{
+					presets:["@babel/preset-env", "@babel/preset-react"]
+				}
+			},
 			{
 				test: /\.(sa|sc|c)ss$/i,
 				use: [
@@ -18,33 +25,20 @@ module.exports = {
 					"css-loader",
 					"sass-loader"
 				]
-			},
-			{
-				test: /\.m?js$/,
-				exclude: /node_modules/,
-				use: {
-					loader: "babel-loader",
-					options: {
-						presets: ["@babel/preset-env"]
-					}
-				}
 			}
 		]
 	},
-	plugins: [new MiniCssExtractPlugin({
-		filename: "index.css",
-		chunkFilename: "[id].css"
-	})],
-	resolve: {
-		alias: {
-			"vue$": "vue/dist/vue.esm.js"
-		}
-	},
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: "index.css"
+		})
+
+	],
 	devServer: {
 		static: {
 			directory: path.join(__dirname, "."),
 		},
 		compress: true,
-		port: 3000,
+		port: 3000
 	}
-};
+}
