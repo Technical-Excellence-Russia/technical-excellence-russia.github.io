@@ -1,11 +1,12 @@
 const path = require("path");
 require("babel-polyfill");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const docs =  path.resolve(__dirname, "./docs/")
 
 module.exports = {
 	entry: "./src/index.js",
 	output: {
-		path: path.resolve(__dirname, "./"),
+		path: docs,
 		filename: "index.js"
 	},
 	module: {
@@ -36,7 +37,7 @@ module.exports = {
 	],
 	devServer: {
 		static: {
-			directory: path.join(__dirname, "."),
+			directory: docs,
 		},
 		compress: true,
 		port: 3000
