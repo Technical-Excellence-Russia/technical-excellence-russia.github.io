@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /src/
 
 Sitemap: https://technical-excellence.ru/sitemap.xml
